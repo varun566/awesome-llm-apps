@@ -1,0 +1,112 @@
+/* =========================================================
+   Internet Research Assistant – Custom Streamlit Styles
+   ========================================================= */
+
+/* --- Chat bubbles ---------------------------------------- */
+.user-message {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #ffffff;
+    border-radius: 18px 18px 4px 18px;
+    padding: 12px 18px;
+    margin: 8px 0;
+    max-width: 80%;
+    margin-left: auto;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.assistant-message {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #2d3748;
+    border-radius: 18px 18px 18px 4px;
+    padding: 14px 18px;
+    margin: 8px 0;
+    max-width: 85%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* --- Source cards --------------------------------------- */
+.source-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin: 6px 0;
+    background: #ffffff;
+    transition: box-shadow 0.2s ease;
+}
+
+.source-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Confidence badge ----------------------------------- */
+.confidence-high {
+    background: #c6f6d5;
+    color: #276749;
+    border-radius: 20px;
+    padding: 2px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+.confidence-medium {
+    background: #fefcbf;
+    color: #744210;
+    border-radius: 20px;
+    padding: 2px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+.confidence-low {
+    background: #fed7d7;
+    color: #742a2a;
+    border-radius: 20px;
+    padding: 2px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+/* --- Sidebar stats -------------------------------------- */
+.stat-box {
+    background: #edf2f7;
+    border-radius: 8px;
+    padding: 8px 14px;
+    margin: 4px 0;
+    font-size: 0.88rem;
+}
+
+/* --- Search progress bar -------------------------------- */
+.search-progress {
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 2px;
+    animation: progress-pulse 1.5s infinite;
+}
+
+@keyframes progress-pulse {
+    0%   { opacity: 1; }
+    50%  { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* --- Related questions ---------------------------------- */
+.related-question {
+    border: 1px dashed #a0aec0;
+    border-radius: 8px;
+    padding: 8px 14px;
+    margin: 4px 0;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    color: #4a5568;
+}
+
+.related-question:hover {
+    background: #ebf4ff;
+    border-color: #667eea;
+    color: #2b6cb0;
+}
